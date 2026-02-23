@@ -1,0 +1,205 @@
+/* Reset Margin & Padding bawaan Browser */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Background utama halaman dengan gradasi merah hitam */
+body {
+  background: linear-gradient(180deg, #121212 0%, #2c0000 50%, #000000 100%);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Container untuk mensimulasikan layar HP */
+.container {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* --- Header Area --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff4d4d;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: rgba(255, 77, 77, 0.2);
+  transform: translateY(-2px);
+}
+
+/* --- Profile Area --- */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 105px;
+  height: 105px;
+  background: linear-gradient(135deg, #ff0000 0%, #4a0000 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  /* Tambahkan ini agar gambar bulat sempurna */
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.username {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* --- Links Area --- */
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.link-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 65px;
+}
+
+.link-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+  border: 1px solid rgba(255, 77, 77, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.link-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.link-title {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.link-subtitle {
+  font-size: 12px;
+  color: #bcbcbc;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.location-icon {
+  color: #ff3333;
+}
+
+.dots-icon {
+  color: #666;
+}
+
+/* --- Floating Button --- */
+.floating-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+.join-button {
+  background: linear-gradient(90deg, #ff0000 0%, #b30000 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 32px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.join-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+}
+
+.join-button strong {
+  font-weight: 800;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  padding-bottom: 10px;
+  line-height: 1.8;
+}
+
+.footer p:last-child {
+  margin-top: 8px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
